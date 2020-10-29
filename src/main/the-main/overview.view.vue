@@ -21,7 +21,7 @@
 import {
     TheHeaderComponent,
     TheMainComponent,
-}                       from './overview';
+}                       from 'main/the-main/overview';
 import {default as Vue} from 'vue';
 
 export default Vue.extend(

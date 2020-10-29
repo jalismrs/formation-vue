@@ -1,5 +1,4 @@
 import {default as Vue}       from 'vue';
-import './dependencies';
 import {default as MainEntry} from './main.entry.vue';
 
 const id = 'app';

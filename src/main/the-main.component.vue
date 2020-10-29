@@ -10,7 +10,7 @@
     lang="js"
 >
 import {default as Vue} from 'vue';
-import {OverviewView}   from './the-main';
+import {OverviewView}   from 'main/the-main';
 
 export default Vue.extend(
     {

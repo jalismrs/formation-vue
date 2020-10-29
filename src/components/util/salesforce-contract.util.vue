@@ -11,8 +11,8 @@
     lang="js"
 >
 import {default as Vue} from 'vue';
-import {UrlUtil}        from '.';
-import {contractUrl}    from './salesforce';
+import {UrlUtil}     from '.';
+import {contractUrl} from 'components/util/salesforce';
 
 export default Vue.extend(
     {

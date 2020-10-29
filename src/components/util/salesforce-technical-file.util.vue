@@ -11,7 +11,7 @@
     lang="js"
 >
 import {UrlUtil}          from '.';
-import {technicalFileUrl} from './salesforce';
+import {technicalFileUrl} from 'components/util/salesforce';
 import {default as Vue}   from 'vue';
 
 export default Vue.extend(

@@ -32,7 +32,7 @@ import {default as Vue} from 'vue';
 import {
     LinkComponent,
     LinkCountComponent,
-}                       from './links-card';
+}                       from 'components/layout/links-card';
 
 export default Vue.extend(
     {

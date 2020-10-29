@@ -1,4 +1,4 @@
-export const base: string = 'https://jalis.lightning.force.com';
+export const base = 'https://jalis.lightning.force.com';
 
 /**
  *
@@ -7,9 +7,9 @@ export const base: string = 'https://jalis.lightning.force.com';
  * @returns {string}
  */
 export const url = (
-    path: string,
-    id: string,
-): string => {
+    path,
+    id,
+) => {
     return `${base}/lightning/r/${path}/${id}/view`;
 };
 
@@ -19,8 +19,8 @@ export const url = (
  * @returns {string}
  */
 export const contractUrl = (
-    id: string,
-): string => {
+    id,
+) => {
     return url(
         'Contract',
         id
@@ -33,8 +33,8 @@ export const contractUrl = (
  * @returns {string}
  */
 export const opportunityUrl = (
-    id: string,
-): string => {
+    id,
+) => {
     return url(
         'Opportunity',
         id
@@ -47,8 +47,8 @@ export const opportunityUrl = (
  * @returns {string}
  */
 export const technicalFileUrl = (
-    id: string,
-): string => {
+    id,
+) => {
     return url(
         'Suivi_production__c',
         id

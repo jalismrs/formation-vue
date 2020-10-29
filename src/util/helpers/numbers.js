@@ -4,7 +4,7 @@
  * @returns {string}
  */
 export const render = (
-    value: number,
-): string => {
+    value,
+) => {
     return value.toLocaleString('fr-FR');
 };

@@ -12,7 +12,7 @@
 >
 import {default as Vue} from 'vue';
 import {UrlUtil}        from '.';
-import {opportunityUrl} from './salesforce';
+import {opportunityUrl} from 'components/util/salesforce';
 
 export default Vue.extend(
     {

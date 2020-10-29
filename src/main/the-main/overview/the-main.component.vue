@@ -50,14 +50,14 @@
 <script
     lang="js"
 >
-import {default as Moment} from 'moment';
-import {default as Vue}    from 'vue';
-import {TrafficComponent}  from '../../../components/data';
+import {default as moment} from 'moment';
+import {default as Vue}   from 'vue';
+import {TrafficComponent} from 'components/data';
 import {
     ApiSeoHolderComponent,
     InfosComponent,
     InterventionsComponent,
-}                          from './the-main';
+}                         from 'main/the-main/overview/the-main';
 
 export default Vue.extend(
     {
@@ -69,7 +69,7 @@ export default Vue.extend(
         },
         data() {
             return {
-                date: Moment()
+                date: moment()
                     .add(
                         -1,
                         'month',

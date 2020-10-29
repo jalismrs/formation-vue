@@ -11,14 +11,14 @@
 <script
     lang="js"
 >
-import {default as Moment} from 'moment';
+import {default as moment} from 'moment';
 import {default as Vue}    from 'vue';
 
 export default Vue.extend(
     {
         computed: {
             text() {
-                return Moment(this.value)
+                return moment(this.value)
                     .format(this.format);
             },
         },

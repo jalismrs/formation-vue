@@ -48,7 +48,7 @@
     lang="js"
 >
 import {default as Vue} from 'vue';
-import * as numbers     from '../../util/helpers/numbers';
+import * as numbers     from 'util/helpers/numbers';
 
 export default Vue.extend(
     {

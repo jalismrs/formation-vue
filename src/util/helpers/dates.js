@@ -1,4 +1,4 @@
-import {default as Moment} from 'moment';
+import {default as moment} from 'moment';
 
 /**
  *
@@ -7,19 +7,19 @@ import {default as Moment} from 'moment';
  * @returns {number}
  */
 export const compareDates = (
-    date1: string,
-    date2: string,
-): number => {
-    const moment1 = Moment(date1);
-    const moment2 = Moment(date2);
+    date1,
+    date2,
+) => {
+    const moment1 = moment(date1);
+    const moment2 = moment(date2);
 
     return moment1.diff(moment2);
 };
 
 export const areDatesEqual = (
-    date1: string,
-    date2: string,
-): boolean => {
+    date1,
+    date2,
+) => {
     return compareDates(
         date1,
         date2,

@@ -16,7 +16,7 @@ import {
     TheFooterComponent,
     TheHeaderComponent,
     TheMainComponent,
-}                       from './main';
+}                       from 'main';
 
 export default Vue.extend(
     {
