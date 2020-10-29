@@ -11,12 +11,10 @@
 <script
     lang="js"
 >
-import {default as Vue} from 'vue';
-import {
-    TheFooterComponent,
-    TheHeaderComponent,
-    TheMainComponent,
-}                       from './main';
+import {default as Vue}                from 'vue';
+import {default as TheFooterComponent} from './main/the-footer.component.vue';
+import {default as TheHeaderComponent} from './main/the-header.component.vue';
+import {default as TheMainComponent}   from './main/the-main.component.vue';
 
 export default Vue.extend(
     {
@@ -25,7 +23,6 @@ export default Vue.extend(
             TheHeaderComponent,
             TheMainComponent,
         },
-        name: 'MainEntry',
     },
 );
 </script>

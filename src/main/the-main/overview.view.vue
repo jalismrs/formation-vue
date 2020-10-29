@@ -39,7 +39,6 @@ export default Vue.extend(
                 traffic    : undefined,
             };
         },
-        name: 'OverviewView',
     },
 );
 </script>

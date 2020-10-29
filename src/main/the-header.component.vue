@@ -19,7 +19,6 @@ export default Vue.extend(
         components: {
             TheBrandComponent,
         },
-        name: 'TheHeaderComponent',
     },
 );
 </script>
