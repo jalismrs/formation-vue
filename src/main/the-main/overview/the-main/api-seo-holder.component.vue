@@ -24,8 +24,8 @@
 <script
     lang="js"
 >
-import {ApiSeoComponent} from 'main/the-main/overview/the-main/api-seo-holder';
 import {default as Vue}  from 'vue';
+import {ApiSeoComponent} from './api-seo-holder';
 
 export default Vue.extend(
     {

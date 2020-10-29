@@ -57,7 +57,7 @@ import {
     ApiSeoHolderComponent,
     InfosComponent,
     InterventionsComponent,
-}                         from 'main/the-main/overview/the-main';
+}                         from './the-main';
 
 export default Vue.extend(
     {

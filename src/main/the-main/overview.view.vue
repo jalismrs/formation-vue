@@ -18,11 +18,11 @@
 <script
     lang="js"
 >
+import {default as Vue} from 'vue';
 import {
     TheHeaderComponent,
     TheMainComponent,
-}                       from 'main/the-main/overview';
-import {default as Vue} from 'vue';
+}                       from './overview';
 
 export default Vue.extend(
     {

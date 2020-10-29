@@ -12,7 +12,7 @@
     lang="js"
 >
 import {default as Vue}    from 'vue';
-import {TheBrandComponent} from 'main/the-header';
+import {TheBrandComponent} from './the-header';
 
 export default Vue.extend(
     {

@@ -32,7 +32,7 @@
     lang="js"
 >
 import {default as Vue}        from 'vue';
-import {InterventionComponent} from 'main/the-main/overview/the-main/interventions';
+import {InterventionComponent} from './interventions';
 
 export default Vue.extend(
     {
