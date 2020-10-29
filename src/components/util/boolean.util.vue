@@ -1,12 +1,9 @@
 <template
     lang="html"
 >
-    <b-badge
-        :variant="display.variant"
-        pill
-    >
+    <span>
         {{ display.text }}
-    </b-badge>
+    </span>
 </template>
 
 <script

@@ -1,44 +1,26 @@
 <template
     lang="html"
 >
-    <b-card
-        footer-tag="footer"
-        header-tag="header"
-        no-body
-    >
-        <template
-            #header
-        >
+    <div>
+        <header>
             <b>
                 Informations
             </b>
-        </template>
-        <b-card-body>
-            <b-container
-                :fluid="true"
-            >
-                <dl
-                    class="row"
-                >
-                    <dt
-                        class="col-xl-3 col-lg-4 col-md-5 col-sm-6"
-                    >
+        </header>
+        <div>
+            <div>
+                <dl>
+                    <dt>
                         ID Google Analytics
                     </dt>
-                    <dd
-                        class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
-                    >
+                    <dd>
                         {{ entity.externalId }}
                     </dd>
 
-                    <dt
-                        class="col-xl-3 col-lg-4 col-md-5 col-sm-6"
-                    >
+                    <dt>
                         Créée le
                     </dt>
-                    <dd
-                        class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
-                    >
+                    <dd>
                         <DateTimeUtil
                             :format="format"
                             :value="entity.created"
@@ -48,14 +30,10 @@
                     <template
                         v-if="areDatesEqual(entity.created, entity.updated)"
                     >
-                        <dt
-                            class="col-xl-3 col-lg-4 col-md-5 col-sm-6"
-                        >
+                        <dt>
                             Mise à jour le
                         </dt>
-                        <dd
-                            class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
-                        >
+                        <dd>
                             <DateTimeUtil
                                 :format="format"
                                 :value="entity.updated"
@@ -63,20 +41,16 @@
                         </dd>
                     </template>
 
-                    <dt
-                        class="col-xl-3 col-lg-4 col-md-5 col-sm-6"
-                    >
+                    <dt>
                         Contrat Salesforce
                     </dt>
                     <dd
                         v-if="entity.contract === null"
-                        class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
                     >
                         Aucun contrat associé
                     </dd>
                     <dd
                         v-else
-                        class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
                     >
                         <SalesforceContractUtil
                             :value="entity.contract.externalId"
@@ -86,28 +60,20 @@
                     <template
                         v-if="entity.contract !== null && entity.contract.user"
                     >
-                        <dt
-                            class="col-xl-3 col-lg-4 col-md-5 col-sm-6"
-                        >
+                        <dt>
                             Utilisateur contrat Salesforce
                         </dt>
-                        <dd
-                            class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
-                        >
+                        <dd>
                             <UserEntityLink
                                 :entity="entity.contract.user"
                             />
                         </dd>
                     </template>
 
-                    <dt
-                        class="col-xl-3 col-lg-4 col-md-5 col-sm-6"
-                    >
+                    <dt>
                         Site web
                     </dt>
-                    <dd
-                        class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
-                    >
+                    <dd>
                         <UrlUtil
                             :value="entity.url"
                         />
@@ -116,17 +82,11 @@
                     <template
                         v-if="entity.missingPermissions.length > 0"
                     >
-                        <dt
-                            class="col-xl-3 col-lg-4 col-md-5 col-sm-6"
-                        >
+                        <dt>
                             Permissions manquantes
                         </dt>
-                        <dd
-                            class="col-xl-9 col-lg-8 col-md-7 col-sm-6"
-                        >
-                            <ul
-                                class="list-unstyled"
-                            >
+                        <dd>
+                            <ul>
                                 <li
                                     v-for="(missingPermission,index) in entity.missingPermissions"
                                     :key="index"
@@ -137,9 +97,9 @@
                         </dd>
                     </template>
                 </dl>
-            </b-container>
-        </b-card-body>
-    </b-card>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script

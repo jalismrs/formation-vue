@@ -1,114 +1,78 @@
 <template
     lang="html"
 >
-    <b-container
-        :fluid="true"
-    >
-        <dl
-            class="row"
-        >
+    <div>
+        <dl>
             <template
                 v-if="apiSeo.stats.nombreContacts"
             >
-                <dt
-                    class="col-sm-8"
-                >
+                <dt>
                     Contacts
                 </dt>
-                <dd
-                    class="col-sm-4"
-                >
-                    <b-badge
-                        variant="light"
-                    >
+                <dd>
+                    <span>
                         {{ apiSeo.stats.nombreContacts }}
-                    </b-badge>
+                    </span>
                 </dd>
             </template>
             <template
                 v-if="apiSeo.stats.nombreExpressions"
             >
-                <dt
-                    class="col-sm-8"
-                >
+                <dt>
                     Jalis Express
                 </dt>
-                <dd
-                    class="col-sm-4"
-                >
-                    <b-badge
-                        :variant="hasNombreExpressions ? 'warning' : 'success'"
-                    >
+                <dd>
+                    <span>
                         {{ apiSeo.stats.nombreExpressions }}{{
                             hasNombreExpressionsMax ? ` sur
                         ${apiSeo.config.maxExpression}` : ''
                         }}
-                    </b-badge>
+                    </span>
                 </dd>
             </template>
             <template
                 v-if="apiSeo.stats.nombreAnnonces"
             >
-                <dt
-                    class="col-sm-8"
-                >
+                <dt>
                     Annonces
                 </dt>
-                <dd
-                    class="col-sm-4"
-                >
-                    <b-badge
-                        :variant="hasNombreAnnonces ? 'danger' : 'success'"
-                    >
+                <dd>
+                    <span>
                         {{ apiSeo.stats.nombreAnnonces - 2 }}{{
                             hasNombreAnnoncesMax ? ` sur
                         ${apiSeo.config.maxAnnonce}` : ''
                         }}
-                    </b-badge>
+                    </span>
                 </dd>
             </template>
             <template
                 v-if="apiSeo.stats.nombreLiensUtiles"
             >
-                <dt
-                    class="col-sm-8"
-                >
+                <dt>
                     Liens utile
                 </dt>
-                <dd
-                    class="col-sm-4"
-                >
-                    <b-badge
-                        variant="light"
-                    >
+                <dd>
+                    <span>
                         {{ apiSeo.stats.nombreLiensUtiles }}
-                    </b-badge>
+                    </span>
                 </dd>
             </template>
             <template
                 v-if="apiSeo.stats.nombreArchives"
             >
-                <dt
-                    class="col-sm-8"
-                >
+                <dt>
                     Archives
                 </dt>
-                <dd
-                    class="col-sm-4"
-                >
-                    <b-badge
-                        variant="light"
-                    >
+                <dd>
+                    <span>
                         {{ apiSeo.stats.nombreArchives }}
-                    </b-badge>
+                    </span>
                 </dd>
             </template>
             <template
                 v-if="apiSeo.stats.nombreJoursSansMaj"
             >
-                <dt
-                    class="col-sm-8"
-                >
+                <dt>
                     Dernière
                     <abbr
                         title="mise à jour"
@@ -116,36 +80,26 @@
                         MAJ
                     </abbr>
                 </dt>
-                <dd
-                    class="col-sm-4"
-                >
-                    <b-badge
-                        :variant="hasNombreJoursSansMaj ? 'warning' : 'light'"
-                    >
+                <dd>
+                    <span>
                         Il y a {{ apiSeo.stats.nombreJoursSansMaj }} {{ words.jours }}
-                    </b-badge>
+                    </span>
                 </dd>
             </template>
             <template
                 v-if="apiSeo.stats.nombreCaracMoy"
             >
-                <dt
-                    class="col-sm-8"
-                >
+                <dt>
                     Moyenne des caractères par annonce
                 </dt>
-                <dd
-                    class="col-sm-4"
-                >
-                    <b-badge
-                        :variant="hasNombreCaracMoy ? 'success' : 'light'"
-                    >
+                <dd>
+                    <span>
                         {{ apiSeo.stats.nombreCaracMoy }}
-                    </b-badge>
+                    </span>
                 </dd>
             </template>
         </dl>
-    </b-container>
+    </div>
 </template>
 
 <script

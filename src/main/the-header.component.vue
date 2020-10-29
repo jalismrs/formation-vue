@@ -1,13 +1,8 @@
 <template
     lang="html"
 >
-    <header
-        id="CSS-header"
-        class="mb-5"
-    >
-        <nav
-            class="navbar sticky-top navbar-dark bg-dark fixed-top"
-        >
+    <header>
+        <nav>
             <TheBrandComponent />
         </nav>
     </header>

@@ -1,7 +1,10 @@
 <template
     lang="html"
 >
-    <b-link>
+    <a
+        href="#"
+        target="_self"
+    >
         <template
             v-if="entity.active"
         >
@@ -9,11 +12,10 @@
         </template>
         <s
             v-else
-            class="inactive"
         >
             {{ entity.displayText }}
         </s>
-    </b-link>
+    </a>
 </template>
 
 <script

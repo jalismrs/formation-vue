@@ -2,7 +2,6 @@
     lang="html"
 >
     <a
-        class="navbar-brand"
         href="/"
         target="_self"
     >

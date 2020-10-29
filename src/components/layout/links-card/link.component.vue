@@ -1,12 +1,12 @@
 <template
     lang="html"
 >
-    <b-link
-        :to="element.location"
-        class="btn btn-primary"
+    <a
+        href="#"
+        target="_self"
     >
         {{ element.text }}
-    </b-link>
+    </a>
 </template>
 
 <script

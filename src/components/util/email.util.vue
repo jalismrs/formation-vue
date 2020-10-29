@@ -1,11 +1,12 @@
 <template
     lang="html"
 >
-    <b-link
+    <a
+        target="_self"
         :href="`mailto:${value}`"
     >
         {{ value }}
-    </b-link>
+    </a>
 </template>
 
 <script

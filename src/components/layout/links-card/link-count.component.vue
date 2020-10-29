@@ -1,19 +1,17 @@
 <template
     lang="html"
 >
-    <b-link
+    <a
+        href="#"
+        target="_self"
+    >
         :disabled="element.count === 0"
-        :to="element.location"
-        class="btn btn-primary"
     >
         {{ element.text }}
-        <b-badge
-            pill
-            variant="light"
-        >
+        <span>
             {{ element.count }}
-        </b-badge>
-    </b-link>
+        </span>
+    </a>
 </template>
 
 <script

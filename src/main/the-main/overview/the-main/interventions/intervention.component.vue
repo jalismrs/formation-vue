@@ -3,16 +3,11 @@
 >
     <div
         v-if="display"
-        class="col-12 row"
     >
-        <dt
-            class="col-4"
-        >
+        <dt>
             {{ intervention.role }}
         </dt>
-        <dd
-            class="col-8"
-        >
+        <dd>
             <UserEntityLink
                 :entity="intervention.user"
             />

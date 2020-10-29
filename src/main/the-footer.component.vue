@@ -1,10 +1,7 @@
 <template
     lang="html"
 >
-    <footer
-        id="CSS-footer"
-        class="mt-5"
-    ></footer>
+    <footer></footer>
 </template>
 
 <script

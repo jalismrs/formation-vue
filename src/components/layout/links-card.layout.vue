@@ -1,23 +1,16 @@
 <template
     lang="html"
 >
-    <b-card
-        footer-tag="footer"
-        header-tag="header"
-        no-body
-    >
-        <template
-            #header
-        >
+    <div>
+        <header>
             <b>
                 Liens
             </b>
-        </template>
-        <b-card-body>
+        </header>
+        <div>
             <div
                 v-for="(element) in links"
                 :key="element.name"
-                class="my-1"
             >
                 <LinkCountComponent
                     v-if="element.hasOwnProperty('count')"
@@ -28,8 +21,8 @@
                     :element="element"
                 />
             </div>
-        </b-card-body>
-    </b-card>
+        </div>
+    </div>
 </template>
 
 <script

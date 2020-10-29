@@ -1,30 +1,22 @@
 <template
     lang="html"
 >
-    <b-container
-        :fluid="true"
-    >
-        <b-row>
-            <b-col
-                class="CSS-card-block-half-width"
-            >
+    <div>
+        <div>
+            <div>
                 <InfosComponent
                     :access="access"
                     :entity="entity"
                 />
-            </b-col>
-            <b-col
-                class="CSS-card-block-half-width"
-            >
+            </div>
+            <div>
                 <ApiSeoHolderComponent
                     :api-seo="apiSeo"
                 />
-            </b-col>
-        </b-row>
-        <b-row>
-            <b-col
-                class="CSS-card-block-half-width"
-            >
+            </div>
+        </div>
+        <div>
+            <div>
                 <TrafficComponent
                     :items="traffic.total"
                 >
@@ -43,17 +35,16 @@
                         Trafic du mois de {{ date }}
                     </template>
                 </TrafficComponent>
-            </b-col>
-            <b-col
+            </div>
+            <div
                 v-if="entity.contract !== null"
-                class="CSS-card-block-half-width"
             >
                 <InterventionsComponent
                     :contract="entity.contract"
                 />
-            </b-col>
-        </b-row>
-    </b-container>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script

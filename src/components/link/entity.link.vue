@@ -1,9 +1,12 @@
 <template
     lang="html"
 >
-    <b-link>
+    <a
+        href="#"
+       target="_self"
+    >
         {{ entity.displayText }}
-    </b-link>
+    </a>
 </template>
 
 <script

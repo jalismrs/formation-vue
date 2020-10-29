@@ -1,9 +1,7 @@
 <template
     lang="html"
 >
-    <main
-        id="CSS-main"
-    >
+    <main>
         <OverviewView />
     </main>
 </template>

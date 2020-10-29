@@ -1,13 +1,13 @@
 <template
     lang="html"
 >
-    <b-link
+    <a
         :href="value"
         rel="nofollow noopener noreferrer"
         target="_blank"
     >
         {{ display }}
-    </b-link>
+    </a>
 </template>
 
 <script

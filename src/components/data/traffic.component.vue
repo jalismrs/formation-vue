@@ -1,21 +1,15 @@
 <template
     lang="html"
 >
-    <b-card
-        footer-tag="footer"
-        header-tag="header"
-        no-body
-    >
-        <template
-            #header
-        >
+    <div>
+        <header>
             <b>
                 <slot
                     name="title"
                 />
             </b>
-        </template>
-        <b-card-body>
+        </header>
+        <div>
             <template
                 v-if="items.length === 0"
             >
@@ -24,47 +18,30 @@
             <template
                 v-else
             >
-                <b-container
-                    :fluid="true"
-                >
-                    <dl
-                        class="row mb-0"
-                    >
+                <div>
+                    <dl>
                         <template
                             v-for="item in items"
                         >
-                            <dt
-                                class="col-8"
-                            >
-                                <b-badge
-                                    variant="transparent"
-                                >
+                            <dt>
+                                <span>
                                     {{ item.channel.name }}
-                                </b-badge>
+                                </span>
                             </dt>
-                            <dd
-                                class="col-4 text-right"
-                            >
-                                <b-badge
-                                    v-b-tooltip.hover.right
+                            <dd>
+                                <span
                                     :style="`background-color:${item.channel.color}; color:${color(item.channel.color)};`"
                                     :title="item.channel.description"
-                                    class="CSS-help"
-                                    pill
                                 >
                                     {{ total(item.total) }}
-                                    <FontAwesomeIcon
-                                        :icon="icons.infoCircle"
-                                        size="xs"
-                                    />
-                                </b-badge>
+                                </span>
                             </dd>
                         </template>
                     </dl>
-                </b-container>
+                </div>
             </template>
-        </b-card-body>
-    </b-card>
+        </div>
+    </div>
 </template>
 
 <script

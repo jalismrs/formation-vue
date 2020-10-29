@@ -1,40 +1,31 @@
 <template
     lang="html"
 >
-    <b-card
-        footer-tag="footer"
-        header-tag="header"
-        no-body
-    >
-        <template
-            #header
-        >
+    <div>
+        <header>
             <b>
                 Interventions contrat
             </b>
-        </template>
-        <b-card-body>
+        </header>
+        <div>
             <template
                 v-if="contract.interventions.length === 0"
             >
                 Aucune intervention contrat
             </template>
-            <b-container
+            <div
                 v-else
-                :fluid="true"
             >
-                <dl
-                    class="row"
-                >
+                <dl>
                     <InterventionComponent
                         v-for="intervention in contract.interventions"
                         :key="intervention.id"
                         :intervention="intervention"
                     />
                 </dl>
-            </b-container>
-        </b-card-body>
-    </b-card>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script

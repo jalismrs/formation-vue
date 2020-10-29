@@ -1,9 +1,7 @@
 <template
     lang="html"
 >
-    <div
-        class="d-flex flex-column h-100"
-    >
+    <div>
         <TheHeaderComponent />
         <TheMainComponent />
         <TheFooterComponent />

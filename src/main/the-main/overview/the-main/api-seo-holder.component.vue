@@ -1,19 +1,13 @@
 <template
     lang="html"
 >
-    <b-card
-        footer-tag="footer"
-        header-tag="header"
-        no-body
-    >
-        <template
-            #header
-        >
+    <div>
+        <header>
             <b>
                 API SEO
             </b>
-        </template>
-        <b-card-body>
+        </header>
+        <div>
             <ApiSeoComponent
                 v-if="display"
                 :api-seo="apiSeo"
@@ -23,8 +17,8 @@
             >
                 Données indisponibles
             </template>
-        </b-card-body>
-    </b-card>
+        </div>
+    </div>
 </template>
 
 <script
