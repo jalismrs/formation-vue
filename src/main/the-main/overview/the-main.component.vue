@@ -51,13 +51,13 @@
     lang="js"
 >
 import {default as moment} from 'moment';
-import {default as Vue}   from 'vue';
-import {TrafficComponent} from 'components/data';
+import {default as Vue}    from 'vue';
+import {TrafficComponent}  from '../../../components/data';
 import {
     ApiSeoHolderComponent,
     InfosComponent,
     InterventionsComponent,
-}                         from './the-main';
+}                          from './the-main';
 
 export default Vue.extend(
     {
