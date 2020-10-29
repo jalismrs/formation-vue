@@ -35,11 +35,11 @@
 <script
     lang="js"
 >
+import {default as Vue} from 'vue';
 import {
     LinkComponent,
     LinkCountComponent,
-}                       from 'App/components/layout/links-card';
-import {default as Vue} from 'vue';
+}                       from './links-card';
 
 export default Vue.extend(
     {

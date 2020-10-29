@@ -70,8 +70,8 @@
 <script
     lang="js"
 >
-import * as numbers     from 'App/util/helpers/numbers';
 import {default as Vue} from 'vue';
+import * as numbers     from '../../util/helpers/numbers';
 
 export default Vue.extend(
     {

@@ -30,7 +30,7 @@
 <script
     lang="js"
 >
-import {ApiSeoComponent} from 'App/views/app/view/overview/the-main/api-seo-holder';
+import {ApiSeoComponent} from './api-seo-holder';
 import {default as Vue}  from 'vue';
 
 export default Vue.extend(

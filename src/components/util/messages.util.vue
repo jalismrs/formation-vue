@@ -16,8 +16,8 @@
 <script
     lang="js"
 >
-import {MessageUtil}    from 'App/components/util';
 import {default as Vue} from 'vue';
+import {MessageUtil}    from '.';
 
 export default Vue.extend(
     {

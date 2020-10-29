@@ -23,9 +23,9 @@
 <script
     lang="js"
 >
-import {UserEntityLink}             from 'App/components/link';
 import {remove as removeDiacritics} from 'diacritics';
 import {default as Vue}             from 'vue';
+import {UserEntityLink}             from '../../../../../components/link';
 
 export default Vue.extend(
     {

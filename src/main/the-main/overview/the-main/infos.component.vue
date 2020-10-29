@@ -145,14 +145,14 @@
 <script
     lang="js"
 >
-import {UserEntityLink} from 'App/components/link';
+import {default as Vue} from 'vue';
+import {UserEntityLink} from '../../../../components/link';
 import {
     DateTimeUtil,
     SalesforceContractUtil,
     UrlUtil,
-}                       from 'App/components/util';
-import * as dates       from 'App/util/helpers/dates';
-import {default as Vue} from 'vue';
+}                       from '../../../../components/util';
+import * as dates       from '../../../../util/helpers/dates';
 
 export default Vue.extend(
     {

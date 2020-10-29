@@ -59,21 +59,19 @@
 <script
     lang="js"
 >
-import {TrafficComponent}  from 'App/components/data';
-import {
-    ApiSeoHolderComponent,
-    ChartsComponent,
-    InfosComponent,
-    InterventionsComponent,
-}                          from 'App/views/app/view/overview/the-main';
 import {default as Moment} from 'moment';
 import {default as Vue}    from 'vue';
+import {TrafficComponent}  from '../../../components/data';
+import {
+    ApiSeoHolderComponent,
+    InfosComponent,
+    InterventionsComponent,
+}                          from './the-main';
 
 export default Vue.extend(
     {
         components: {
             ApiSeoHolderComponent,
-            ChartsComponent,
             InfosComponent,
             InterventionsComponent,
             TrafficComponent,

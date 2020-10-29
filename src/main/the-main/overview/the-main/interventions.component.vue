@@ -40,8 +40,8 @@
 <script
     lang="js"
 >
-import {InterventionComponent} from 'App/views/app/view/overview/the-main/interventions';
 import {default as Vue}        from 'vue';
+import {InterventionComponent} from './interventions';
 
 export default Vue.extend(
     {
