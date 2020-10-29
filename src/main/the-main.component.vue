@@ -16,7 +16,8 @@ export default Vue.extend(
     {
         components: {
             OverviewView,
-        }
+        },
+        name: 'TheMainComponent',
     }
 );
 </script>

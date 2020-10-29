@@ -9,5 +9,9 @@
 >
 import {default as Vue} from 'vue';
 
-export default Vue.extend();
+export default Vue.extend(
+    {
+        name: 'TheFooterComponent',
+    }
+);
 </script>

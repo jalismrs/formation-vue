@@ -16,7 +16,7 @@ import {
     TheFooterComponent,
     TheHeaderComponent,
     TheMainComponent,
-}                       from 'main';
+}                       from './main';
 
 export default Vue.extend(
     {
@@ -25,6 +25,7 @@ export default Vue.extend(
             TheHeaderComponent,
             TheMainComponent,
         },
+        name: 'MainEntry',
     },
 );
 </script>
