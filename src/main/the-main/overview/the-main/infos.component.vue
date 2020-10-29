@@ -139,10 +139,6 @@ export default Vue.extend(
             }
         },
         props     : {
-            access: {
-                required: true,
-                type    : Object,
-            },
             entity: {
                 required: true,
                 type    : Object,

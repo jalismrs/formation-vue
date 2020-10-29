@@ -5,7 +5,6 @@
         <div>
             <div>
                 <InfosComponent
-                    :access="access"
                     :entity="entity"
                 />
             </div>
@@ -78,10 +77,6 @@ export default Vue.extend(
             };
         },
         props     : {
-            access : {
-                required: true,
-                type    : Object,
-            },
             apiSeo : {
                 default: null,
                 type   : Object,
