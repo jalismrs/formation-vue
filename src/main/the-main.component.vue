@@ -21,3 +21,8 @@ export default Vue.extend(
 );
 </script>
 
+<style scoped>
+main {
+  padding: 0 5px;
+}
+</style>
